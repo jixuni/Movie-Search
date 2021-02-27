@@ -17,9 +17,10 @@ body {
 .movie {
   background-color: #532a7c;
   margin: 1rem;
-  width: 325px;
+  width: 300px;
   border-radius: 5px;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6);
+  position: relative;
   overflow: hidden;
 }
 
@@ -36,4 +37,23 @@ body {
 
 .movie-info h3 {
   margin: 0;
+}
+
+.movie-over {
+  border-radius: 5px;
+  box-shadow: 0px -5px 7px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  background-color: rgb(138, 9, 89);
+  color: rgb(243, 234, 234);
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(103%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);
 }
