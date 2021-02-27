@@ -36,5 +36,6 @@ const Movie = ({ title, poster_path, overview, vote_average }) => {
     </div>
   );
 };
+//testing
 
 export default Movie;
